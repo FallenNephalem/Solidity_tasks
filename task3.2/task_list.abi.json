@@ -130,7 +130,6 @@
 		{"name":"timestamp","type":"uint32"},
 		{"name":"counter","type":"uint8"},
 		{"name":"deleted","type":"uint8"},
-		{"components":[{"name":"name","type":"string"},{"name":"time","type":"uint32"},{"name":"done","type":"bool"}],"name":"dictionary","type":"map(uint8,tuple)"},
-		{"name":"tasks","type":"string[]"}
+		{"components":[{"name":"name","type":"string"},{"name":"time","type":"uint32"},{"name":"done","type":"bool"}],"name":"dictionary","type":"map(uint8,tuple)"}
 	]
 }

@@ -25,7 +25,6 @@ contract task_list {
     }
 
     mapping(uint8 => task) public dictionary;
-    string[] tasks;
 
     // Contract can have a `constructor` – function that will be called when contract will be deployed to the blockchain.
     // In this example constructor adds current time to the instance variable.
@@ -81,6 +80,7 @@ contract task_list {
         return counter - deleted;
     }
     function getTaskList() public checkOwnerAndAccept returns (string[]) {
+        string[] tasks;
         for (uint8 i=0; i<counter; i++) {
             tasks.push(dictionary[i].name);
         }
@@ -94,5 +94,6 @@ contract task_list {
     }
     function deleteTaskByNumber (uint8 number) public checkOwnerAndAccept {
         delete dictionary[number];
+        deleted++;
     }
 }
