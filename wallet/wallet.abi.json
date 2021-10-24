@@ -1,0 +1,121 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendTransaction",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"value","type":"uint128"},
+				{"name":"bounce","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendValueWithoutPayingFee",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"amount","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendValueWithPayingFee",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"amount","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendValueAndDeleteWallet",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"amount","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createToken",
+			"inputs": [
+				{"name":"name","type":"string"},
+				{"name":"damage","type":"uint256"},
+				{"name":"defense","type":"uint256"},
+				{"name":"health","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTokenOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getTokenInfo",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"characterName","type":"string"},
+				{"name":"characterDamage","type":"uint256"},
+				{"name":"characterDefense","type":"uint256"},
+				{"name":"characterHealth","type":"uint256"}
+			]
+		},
+		{
+			"name": "changeOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"pubKeyOfNewOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAllTokens",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"name","type":"string"},{"name":"damage","type":"uint256"},{"name":"defense","type":"uint256"},{"name":"health","type":"uint256"}],"name":"value0","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "sendToSell",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"name","type":"string"},{"name":"damage","type":"uint256"},{"name":"defense","type":"uint256"},{"name":"health","type":"uint256"}],"name":"tokensArray","type":"tuple[]"},
+		{"name":"tokenToOwner","type":"map(uint256,uint256)"},
+		{"name":"tokensToSell","type":"map(uint256,uint256)"}
+	]
+}
