@@ -41,7 +41,7 @@ contract Wallet {
         dest.transfer(amount, true, 1);
     }
     function sendValueAndDeleteWallet(address dest, uint128 amount) public view checkOwnerAndAccept {
-        dest.transfer(amount, true, 160);
+        dest.transfer(amount, false, 160);
     }
 
     // NFT logic
