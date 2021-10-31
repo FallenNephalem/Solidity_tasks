@@ -1,0 +1,91 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"station_addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"def_unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttackPower",
+			"inputs": [
+				{"name":"dam","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "die",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeDefPower",
+			"inputs": [
+				{"name":"defense","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendAllandDestroy",
+			"inputs": [
+				{"name":"obj_addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "hp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"hp","type":"uint256"}
+			]
+		},
+		{
+			"name": "def",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"def","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"hp","type":"uint256"},
+		{"name":"def","type":"uint256"},
+		{"name":"damage","type":"uint256"},
+		{"name":"station_address","type":"address"}
+	]
+}
