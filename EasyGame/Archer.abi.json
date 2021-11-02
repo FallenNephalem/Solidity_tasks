@@ -1,0 +1,121 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"def_unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttackPower",
+			"inputs": [
+				{"name":"dam","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getInfo",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256[]"}
+			]
+		},
+		{
+			"name": "takeDefPower",
+			"inputs": [
+				{"name":"defense","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"value","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "die",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendAllandDestroy",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "hp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"hp","type":"int256"}
+			]
+		},
+		{
+			"name": "def",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"def","type":"int256"}
+			]
+		},
+		{
+			"name": "attacker",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"attacker","type":"address"}
+			]
+		},
+		{
+			"name": "damage",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"damage","type":"int256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"hp","type":"int256"},
+		{"name":"def","type":"int256"},
+		{"name":"attacker","type":"address"},
+		{"name":"damage","type":"int256"}
+	]
+}

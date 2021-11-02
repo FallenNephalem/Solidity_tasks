@@ -1,0 +1,80 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "takeDefPower",
+			"inputs": [
+				{"name":"defense","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"value","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "die",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendAllandDestroy",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "hp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"hp","type":"int256"}
+			]
+		},
+		{
+			"name": "def",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"def","type":"int256"}
+			]
+		},
+		{
+			"name": "attacker",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"attacker","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"hp","type":"int256"},
+		{"name":"def","type":"int256"},
+		{"name":"attacker","type":"address"}
+	]
+}
